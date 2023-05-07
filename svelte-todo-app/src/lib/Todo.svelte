@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     let tasks = [
         { label: "Learn Svelte", id: "1" },
         { label: "Build an app", id: "2" },
@@ -13,7 +13,7 @@
         }
     }
 
-    function deleteTask(id) {
+    function deleteTask(id: string) {
         tasks = tasks.filter((task) => task.id !== id);
     }
 </script>
